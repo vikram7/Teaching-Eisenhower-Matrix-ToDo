@@ -1,0 +1,27 @@
+<form id='task-form' action="/tasks" method="POST">
+  New Task: <input id="task-text-field" name="text">
+  <br>
+  <select id="important" name="important">
+    <option value="true" name="important">true</option>
+    <option value="false" name="important">false</option>
+  </select>
+  <br>
+  <select id="urgent" name="urgent">
+    <option value="true" name="urgent">true</option>
+    <option value="false" name="urgent">false</option>
+  </select>
+  <br>
+  <button id="new-task-button">Submit</button>
+</form>
+
+<h3>Important, Urgent</h3>
+<div class="important-urgent"></div>
+
+<h3>Important, Non-Urgent</h3>
+<div class="important-not-urgent"></div>
+
+<h3>Non-Important, Urgent</h3>
+<div class="not-important-urgent"></div>
+
+<h3>Non-Important, Non-Urgent</h3>
+<div class="not-important-not-urgent"></div>
